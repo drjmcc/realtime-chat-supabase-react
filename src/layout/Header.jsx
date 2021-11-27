@@ -17,7 +17,7 @@ export default function Header() {
       borderBottom="20px solid #edf2f7"
     >
       <GridItem justifySelf="start" m="2">
-        <Image src="/logo.png" height="30px" ml="2" />
+        {/* <Image src="/logo.png" height="30px" ml="2" /> */}
       </GridItem>
       {auth.user() ? (
         <>
@@ -44,7 +44,7 @@ export default function Header() {
           <GridItem justifySelf="end" alignSelf="end">
             <NameForm username={username} setUsername={setUsername} />
           </GridItem>
-          <Button
+          {/* <Button
             size="sm"
             marginRight="2"
             colorScheme="teal"
@@ -57,7 +57,7 @@ export default function Header() {
             }
           >
             Login
-          </Button>
+          </Button> */}
         </>
       )}
     </Grid>

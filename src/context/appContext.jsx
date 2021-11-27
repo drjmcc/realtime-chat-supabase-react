@@ -6,6 +6,8 @@ const AppContext = createContext({});
 const AppContextProvider = ({ children }) => {
   const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
   const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
+  console.log(supabaseUrl);
+  console.log(supabaseKey);
   const supabase = createClient(supabaseUrl, supabaseKey);
 
   let mySubscription = null;
@@ -118,6 +120,7 @@ const AppContextProvider = ({ children }) => {
       mySubscription = supabase
         .from("messages")
         .on("*", (payload) => {
+          console.log("new message");
           handleNewMessage(payload);
         })
         .subscribe();

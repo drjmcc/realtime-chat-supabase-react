@@ -44,7 +44,7 @@ export default function MessageForm() {
         });
         return;
       }
-      console.log("Sucsessfully sent!");
+      console.log("Successfully sent!");
     } catch (error) {
       console.log("error sending message:", error);
     } finally {
@@ -78,10 +78,6 @@ export default function MessageForm() {
             />
           </Stack>
         </form>
-        <Box fontSize="10px" mt="1">
-          Warning: do not share any sensitive information, it's a public chat
-          room 🙂
-        </Box>
       </Container>
     </Box>
   );
