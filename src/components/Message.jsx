@@ -52,7 +52,7 @@ export default function Message({ message, isYou }) {
               style={{ display: "inline", marginRight: "5px" }}
             />
           )}
-          {countyCode && (
+          {/* {countyCode && (
             <Box display="inline-block" fontSize="10px">
               from {message.country}{" "}
               <img
@@ -61,7 +61,7 @@ export default function Message({ message, isYou }) {
                 alt={message.country}
               />
             </Box>
-          )}
+          )} */}
         </GridItem>
         <GridItem
           justifySelf="start"
