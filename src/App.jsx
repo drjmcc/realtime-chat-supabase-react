@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Chat from "./components/Chat";
+import MessageForm from "./components/MessageForm";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { AppContextProvider, useAppContext } from "./context/appContext";
 
@@ -34,7 +35,7 @@ function App() {
               <Route exact path="/">
                 <Header username={username} setUsername={setUsername} />
                 <Chat username={username} />
-                <Footer username={username} />
+                <MessageForm />
               </Route>
               <Route>Not found</Route>
             </Switch>

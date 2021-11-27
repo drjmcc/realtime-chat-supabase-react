@@ -1,12 +1,12 @@
-import { Box, Grid, GridItem } from "@chakra-ui/react";
-import { FaGithub, FaTwitter } from "react-icons/fa";
-import MessageForm from "../components/MessageForm";
+import { Fragment } from "react";
+import { Box, Container, useColorModeValue } from "@chakra-ui/react";
+
 export default function Footer() {
   return (
-    <Box position="fixed" bottom="0" width="100%">
-      <MessageForm />
+    <Box bg="gray.900">sdf</Box>
+    // <Box position="fixed" bottom="0" width="100%">
 
-      <Grid
+    /* <Grid
         gridTemplateColumns="auto 1fr"
         textAlign="center"
         alignItems="center"
@@ -16,27 +16,27 @@ export default function Footer() {
         bg="white"
       >
         <GridItem justifySelf="start">
-          {/* Built by{" "} */}
-          {/* <a href="http://shimon-wosner.vercel.app" target="_blank"> */}
-          {/* <a
+        Built by{" "}
+        <a href="http://shimon-wosner.vercel.app" target="_blank">
+        <a
             href="https://twitter.com/shwosner"
             target="_blank"
             rel="noreferrer"
           >
             <FaTwitter style={{ display: "inline" }} />
             @shwosner
-          </a> */}
+          </a>
         </GridItem>
         <GridItem justifySelf="end">
-          {/* <a
+          <a
             href="https://github.com/shwosner/realtime-chat-supabase-react"
             target="_blank"
             rel="noreferrer"
           >
             <FaGithub style={{ display: "inline" }} /> Source code
-          </a> */}
+          </a>
         </GridItem>
-      </Grid>
-    </Box>
+      </Grid> */
+    // </Box>
   );
 }
